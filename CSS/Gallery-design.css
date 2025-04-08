@@ -1,0 +1,18 @@
+.GalleryContainer{
+    padding:10px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: beige;
+}
+.ProjectCard{
+    padding: 5px;
+}
+.ProjectCard img{
+    max-height: 400px;
+    transition: transform 0.3s ease;
+}
+.ProjectCard img:hover{
+    transform: scale(1.1);
+}
