@@ -33,3 +33,7 @@ body{
     color: rgb(192, 166, 133);
     text-decoration: none;
 }
+.coverPhoto {
+    width: 100%;
+    height: auto;
+}

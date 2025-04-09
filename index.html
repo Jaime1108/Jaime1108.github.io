@@ -10,7 +10,13 @@
         <link rel="stylesheet" href="CSS/Gallery-design.css" />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <script type="text/javascript" src="script.js"></script>
-
+        <style>
+            .coverPhoto {
+                width: 100%;
+                height: auto;
+            }
+            
+        </style>
 
     </head>
 
@@ -41,7 +47,8 @@
         <div>This is a portfolio website for designer</div>
         <section id="home">
             <!-- Very big image of the designer cover like the who page -->
-            <img>
+            <img class="coverPhoto" src="Placeholder photo/ProjectCardViewType3.jpg" alt="Cover image of designer">
+
             <div class="IntroText">
                 <h1>Designer Name</h1>
                 <p>Digital Artist</p>
@@ -60,9 +67,16 @@
             
         </section> 
         <section id="Bio">
-            <img class="profilePhoto" src="Placeholder photo/placeholder1.jpg">
-            <div class = "Short bio"> Who they are, design philosophy, years of experience, what type of work they love (e.g., branding, digital art, UI/UX).</div>
-            <div class ="Funfacts">  e.g., favorite design tools, art influences, favorite coffee shop vibes, etc</div>
+            <div class="BioContainer">
+                <div class="ProfilePic">
+                    <img class="profilePhoto" src="Placeholder photo/placeholder1.jpg">
+                </div>
+                <div class = "Biography">
+                    <div class="Name">Name</div>
+                    <div class="BodyParagraph">Who they are, design philosophy, years of experience, what type of work they love (e.g., branding, digital art, UI/UX).</div>
+                    <div class ="Funfacts">  e.g., favorite design tools, art influences, favorite coffee shop vibes, etc</div>
+                </div>
+            </div>
         </section >
         <section id="Project">
 
@@ -122,7 +136,28 @@
             
         </section >
         <section id="Contact">
-            
+
+    Contact
+        <form>
+            <label for="Fname">First name</label>
+            <input type="text" id="Fname" name="Fname">
+
+            <label for="Lname">Last name</label>
+            <input type="text" id="Lname" name="Lname">
+
+            <label for="Email">Email</label>
+            <input type="text" id="Email" name="Email">
+            <label for="Message">Email</label>
+            <textarea id="Message" name="Message"></textarea>
+        </form>
+ 
+        Social media links: LinkedIn, Instagram, Behance, Dribbble.
+            <a href="tel:1-234-567-8910">Call - Phone number</a>
+			<a href="sms:1-234-567-8910">Send a  SMS </a>
         </section>
+        
+        <footer>
+            <div>© 2025 by James</div>
+        </footer>
     </body>
 </html>
