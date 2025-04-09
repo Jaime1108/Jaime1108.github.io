@@ -1,3 +1,18 @@
+.ProjectIntro{
+    
+    height: auto;
+    width: auto;
+    background-image: linear-gradient(to right, rgb(238, 137, 153),rgb(68, 38, 221));
+    display: flex;
+    justify-content: center;
+}
+
+.ProjectIntroText{
+    padding:30px;
+    font-size: 60px;
+    font-style: bold;
+    color:rgb(245, 240, 220);
+}
 .GalleryContainer{
     padding:10px;
     margin: auto;

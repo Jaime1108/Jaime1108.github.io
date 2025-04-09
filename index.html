@@ -8,14 +8,11 @@
         <link rel="stylesheet" href="CSS/Overall-design.css" />
         <link rel="stylesheet" href="CSS/Bio-design.css" />
         <link rel="stylesheet" href="CSS/Gallery-design.css" />
+        <link href= "https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet" /> 
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <script type="text/javascript" src="script.js"></script>
         <style>
-            .coverPhoto {
-                width: 100%;
-                height: auto;
-            }
-            
+    
         </style>
 
     </head>
@@ -43,45 +40,67 @@
         </div>
 
         <!-- Add HTML markup elements for your web site below -->
-        <h2>Welcome to Graphic Designer Portfolio!</h2>
-        <div>This is a portfolio website for designer</div>
         <section id="home">
             <!-- Very big image of the designer cover like the who page -->
-            <img class="coverPhoto" src="Placeholder photo/ProjectCardViewType3.jpg" alt="Cover image of designer">
+            <div class="homeContainer">
+                <img class="coverPhoto" src="Placeholder photo/ProjectCardViewType3.jpg" alt="Cover image of designer">
 
-            <div class="IntroText">
-                <h1>Designer Name</h1>
-                <p>Digital Artist</p>
-                <div>
-                    <a href="#Bio">
-                        Learn more About me
-                    </a>
-                    <a href="#Project">
-                        What I do
-                    </a>
-                </div>
-                <div>
-                    Milestone, ... more to be added
+                <div class="IntroText">
+                    <div class="Name">Art By Jane Doe</div>
+                    <p>Digital Artist</p>
+                    <div>
+                        <a href="#Bio">
+                            Learn more About me
+                        </a>
+                        <a href="#Project">
+                            What I do
+                        </a>
+                    </div>
+                    <div class="milestone">
+                        
+                    </div>
                 </div>
             </div>
-            
         </section> 
         <section id="Bio">
             <div class="BioContainer">
                 <div class="ProfilePic">
-                    <img class="profilePhoto" src="Placeholder photo/placeholder1.jpg">
+                    <img class="profilePhoto" src="Placeholder photo/Sample Profile Pic.jpg">
                 </div>
                 <div class = "Biography">
-                    <div class="Name">Name</div>
-                    <div class="BodyParagraph">Who they are, design philosophy, years of experience, what type of work they love (e.g., branding, digital art, UI/UX).</div>
+                    <div class="Name">Jane Doe</div>
+                    <div class="BodyParagraph">
+                        <link rel="stylesheet" href="biograph.html" />
+                        
+                        I’m Jane Doe, an artist fueled by caffeine, chaotic inspiration, and an unhealthy number of late-night “aha!” moments that usually turn into 4-hour drawing marathons. I specialize in creating art that walks the fine line between “deeply emotional” and “why does that tree have legs?”
+
+My artistic journey began when I drew on the walls as a toddler and called it “installation art.” Since then, I’ve upgraded to more socially acceptable surfaces—mostly paper, digital canvases, and occasionally the back of receipts when inspiration strikes at the grocery store.
+
+My style? A mix of bold colors, strange creatures, overly dramatic lighting, and enough existential undertones to make you question your life for a second before laughing. I love blending humor with emotion, fantasy with reality, and glitter with everything.
+
+When I’m not making art, you can find me:
+
+Pretending to organize my 87+ unfinished sketches
+
+Having full-blown arguments with Photoshop
+
+Whispering sweet nothings to my pens so they don’t dry out
+
+And explaining to strangers that yes, this is what I do for a living
+
+Commissions are open if you like weird, whimsical, or “I’m not sure what this is but I love it” kind of art. Let’s make something delightfully ridiculous together.
+                    </div>
                     <div class ="Funfacts">  e.g., favorite design tools, art influences, favorite coffee shop vibes, etc</div>
                 </div>
             </div>
         </section >
         <section id="Project">
-
-            
+            <div class="ProjectIntro">
+                <div class="ProjectIntroText">Personal Project and past works</div>
+                
+            </div>
             <div class="GalleryContainer">
+                
                 <!-- so this is basically the shape for the project card -->
                 <div class="ProjectCard">
                     <img class="ProjectCardType1" src ="Placeholder photo/ProjectCardViewType1.jpg">
