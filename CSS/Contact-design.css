@@ -1,0 +1,11 @@
+#Contact{
+    display: flex;
+    padding: 10px;
+    justify-content: center;    
+    background-color: rgb(217, 136, 136);
+    background-image: linear-gradient(beige,rgb(212, 101, 101));
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+}
