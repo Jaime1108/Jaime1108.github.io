@@ -8,9 +8,45 @@ body{
     padding: 0px;
     font-family: 'kalam';
 }
+
+.DesignerName{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 20px;
+    color: antiquewhite;
+    flex: 1;
+}
+.DesignerName a{
+    text-decoration: none;
+    color: antiquewhite;
+    transition: color 0.3s ease;
+}
+.DesignerName a:hover{
+    color: rgb(252, 170, 62);
+}
+.SocialMedia{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.socialMediaIcon{
+    width: 30px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 .Navigation{
     display: flex;
     justify-content: space-between;
+}
+.NavBar{
+    flex: 0 0 auto;
 }
 .NavBar ul{
     display: flex;
@@ -81,4 +117,11 @@ body{
 
 .IntroText a:hover {
     background: rgba(255, 255, 255, 0.4);
+}
+
+footer{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(212, 101, 101);
 }
