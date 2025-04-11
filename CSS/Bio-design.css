@@ -36,7 +36,10 @@
       display: grid; /* hide these on small screens */
     }
     #Bio{
-        padding-bottom: 20%;
+        padding-bottom: 30%;
+    }
+    .profilePhoto{
+        width: 100%;
     }
 
   }

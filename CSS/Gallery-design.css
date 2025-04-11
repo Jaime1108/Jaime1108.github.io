@@ -1,5 +1,7 @@
+#Project{
+  margin-top: auto ;
+}
 .ProjectIntro{
-    
     height: auto;
     width: auto;
     background-image: linear-gradient(to right, rgb(238, 137, 153),rgb(68, 38, 221));
@@ -30,10 +32,12 @@
     width: 100%;
     height: 100%;
   }
+
 .ProjectCard img{
     max-height: 400px;
     transition: transform 0.3s ease;
-    
+    object-position: center;
+    overflow: hidden;
 }
 .ProjectCard:hover img{
     transform: scale(1.05);
@@ -75,10 +79,6 @@
   .ProjectCard:hover .TitleText {
     opacity: 1;
   }
-
-  
-
-
 /* Start small and invisible */
 .ProjectCard {
   transform: scale(0.8);
@@ -90,4 +90,14 @@
 .ProjectCard.visible {
   transform: scale(1);
   opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  .ProjectCard img {
+    width: 100%;          /* full width on mobile */
+    height: 400px;
+    object-fit: cover;    /* crop tall parts */
+    object-position: center;
+  }
+
+  
 }
