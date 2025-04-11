@@ -6,7 +6,8 @@ body{
     background-color: rgb(122, 152, 114);
     margin: 0;
     padding: 0px;
-    font-family: 'kalam';
+    font-family: 'Kalam', cursive;  /* (Optional: add fallback font) */
+    overflow-x: hidden;             /* 🛠️ This hides horizontal scroll */
 }
 
 .DesignerName{
@@ -70,6 +71,19 @@ body{
     color: rgb(192, 166, 133);
     text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+    .NavBar,
+    .SocialMedia {
+      display: none; /* hide these on small screens */
+    }
+  
+    .DesignerName {
+      flex: 1;
+      text-align: center;
+      justify-content: center;
+    }
+  }
 .homeContainer{
     position:relative;
     width: 100%;

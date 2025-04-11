@@ -1,7 +1,7 @@
 
 
 #Bio{
-    padding-top: 10px;
+    padding-top: 5%;
     padding-bottom: 10px;
     padding-left:15%;
     padding-right:15%;
@@ -30,3 +30,13 @@
     border-width: 5px;
     
 }
+
+@media screen and (max-width: 768px) {
+    .BioContainer {
+      display: grid; /* hide these on small screens */
+    }
+    #Bio{
+        padding-bottom: 20%;
+    }
+
+  }

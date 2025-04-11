@@ -22,7 +22,7 @@
     <body>
 
         <div class="Navigation">
-            <div class="DesignerName"><a href="#">Designer Name</a></div>
+            <div class="DesignerName"><a href="#home">Designer Name</a></div>
             <div class="NavBar">
                 <ul>
                     <li>
@@ -226,11 +226,28 @@ Commissions are open if you like weird, whimsical, or “I’m not sure what thi
         
         <footer>
             <div>© 2025 by James</div>
-			<div><div class="SocialMedia">
+			<div><div class="SocialMedia1">
                 <a><img class="socialMediaIcon" src ="icon/facebook.png" alt="facebook"></a>
                 <a><img class="socialMediaIcon" src ="icon/github.png" alt="github"></a>
                 <a><img class="socialMediaIcon" src ="icon/instagram.png"  alt="instagram"></a>
             </div></div>
         </footer>
     </body>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        }, {
+          threshold: 0.2 // Trigger when 20% of card is visible
+        });
+      
+        // Apply to all project cards
+        document.querySelectorAll('.ProjectCard').forEach(card => {
+          observer.observe(card);
+        });
+      </script>
+      
 </html>
