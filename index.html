@@ -234,19 +234,19 @@ Commissions are open if you like weird, whimsical, or “I’m not sure what thi
         </footer>
     </body>
     <script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, {
-    threshold: 0.2 // Trigger when 20% of card is visible
-  });
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+            });
+        }, {
+            threshold: 0.2 // Trigger when 20% of card is visible
+        });
 
-  // Apply to all project cards
-  document.querySelectorAll('.ProjectCard').forEach(card => {
-    observer.observe(card);
-  });
-</script>
+        // Apply to all project cards
+        document.querySelectorAll('.ProjectCard').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
 </html>
